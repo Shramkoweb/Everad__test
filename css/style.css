@@ -725,8 +725,10 @@ img {
   font-size: 17px;
   line-height: 26.02px; }
   @media (min-width: 980px) {
+    .about__text {
+      width: 555px; } }
+  @media (min-width: 980px) {
     .about__text span {
-      width: 555px;
       font-weight: 700;
       text-transform: uppercase; } }
 
@@ -814,7 +816,7 @@ img {
       padding: 25px;
       padding-bottom: 37px;
       padding-left: 40px;
-      background-image: url("../../img/doctor.jpg");
+      background-image: url("../img/doctor.jpg");
       background-repeat: no-repeat;
       background-position: 296px 0; } }
 
