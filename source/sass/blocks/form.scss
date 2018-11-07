@@ -140,3 +140,9 @@
     transform: rotate(-45deg);
   }
 }
+
+.form-wrapper {
+  @media (min-width: $bp-desktop) {
+    float: right;
+  }
+}

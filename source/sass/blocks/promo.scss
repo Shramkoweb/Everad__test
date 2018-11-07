@@ -5,13 +5,22 @@
 
 .promo__title {
   font-size: 32px;
-  line-height: 36px;
   text-align: center;
   color: transparent;
   text-transform: uppercase;
 
   background-image: linear-gradient(to right, #f0e394 0%, #b49b52 100%);
   background-clip: text;
+
+  @media (min-width: $bp-desktop) {
+    left: 1px;
+
+    margin: 0;
+
+    font-size: 60px;
+    text-align: left;
+    letter-spacing: -1.7px;
+  }
 }
 
 .promo__text {
@@ -35,6 +44,10 @@
 
       background-position: center 0;
     }
+  }
+
+  @media (min-width: $bp-desktop) {
+    font-size: 19px;
   }
 }
 
@@ -90,8 +103,21 @@
   @media (min-width: $bp-tablet) {
     align-items: center;
   }
+
+  @media (min-width: $bp-desktop) {
+    align-items: flex-start;
+  }
 }
 
 .promo__counter {
   margin-bottom: 10px;
+}
+
+.promo__percentage {
+  @media (min-width: $bp-desktop) {
+    display: inline-block;
+    width: 280px;
+
+    vertical-align: bottom;
+  }
 }

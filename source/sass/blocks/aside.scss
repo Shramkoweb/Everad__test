@@ -1,8 +1,24 @@
+.aside {
+  @media (min-width: $bp-desktop) {
+    display: inline-block;
+  }
+}
+
 .aside__title {
   font-weight: 700;
   font-size: 22px;
   text-align: center;
   color: #ffffff;
+
+  @media (min-width: $bp-desktop) {
+    max-width: 320px;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 13px;
+
+    font-size: 22px;
+    text-align: left;
+  }
 }
 
 .aside__list {
@@ -10,6 +26,10 @@
 
   margin-bottom: 25px;
   padding-left: 35px;
+
+  @media (min-width: $bp-desktop) {
+    max-width: 320px;
+  }
 }
 
 .aside__item {
