@@ -1,0 +1,33 @@
+.opinion {
+  padding: 15px;
+
+  color: #000000;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.opinion__title {
+  text-transform: uppercase;
+
+  span {
+    color: $main-red;
+  }
+}
+
+.opinion__author {
+  margin: 0;
+
+  font-weight: 700;
+
+  &::after {
+    content: "";
+    position: relative;
+
+    display: block;
+    width: 185px;
+    height: 64px;
+
+    background-image: url("../img/sign.png");
+  }
+}
