@@ -1,5 +1,6 @@
 .promo {
   background-image: url("../img/header-bc.png");
+  background-repeat: no-repeat;
 }
 
 .promo__title {
@@ -84,6 +85,10 @@
       background-color: #cecece;
       box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
     }
+  }
+
+  @media (min-width: $bp-tablet) {
+    align-items: center;
   }
 }
 
