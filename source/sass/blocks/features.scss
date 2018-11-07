@@ -13,6 +13,11 @@
   @include list-reset;
 
   width: 100%;
+
+  @media (min-width: $bp-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .features__item {
