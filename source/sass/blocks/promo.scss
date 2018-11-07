@@ -28,5 +28,10 @@
     background-image: url("../img/percentage.png");
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-width: $bp-tablet) {
+      background-position: center 0;
+      margin-bottom: 20px;
+    }
   }
 }
