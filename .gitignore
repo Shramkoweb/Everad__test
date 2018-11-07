@@ -12,4 +12,5 @@ node_modules/
 .publish
 ex_files
 Thumbs.db
+/build
 __MACOSX/
