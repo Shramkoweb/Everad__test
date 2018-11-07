@@ -1,0 +1,21 @@
+.about {
+  margin-top: 30px;
+  padding: 15px;
+
+  color: #000000;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.about__title {
+  font-size: 30px;
+
+  span {
+    color: $main-red;
+  }
+}
+
+.about__text {
+  font-size: 17px;
+}
