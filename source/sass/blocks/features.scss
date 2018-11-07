@@ -1,0 +1,44 @@
+.features__title {
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+
+  span {
+    font-weight: 700;
+    color: $main-red;
+  }
+}
+
+.features__list {
+  @include list-reset;
+
+  width: 100%;
+}
+
+.features__item {
+  max-width: 200px;
+  min-height: 251px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #0b0b0b;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.features__img {
+  margin-bottom: 25px;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.features__text {
+  margin: 0;
+  padding: 0 10px;
+  padding-bottom: 10px;
+}
