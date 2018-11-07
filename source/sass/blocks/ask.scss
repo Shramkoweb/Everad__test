@@ -4,8 +4,13 @@
   @media (min-width: $bp-tablet) {
     background-image: url("../img/fire.png");
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: 0 0;
+    background-size: contain;
+  }
+
+  @media (min-width: $bp-desktop) {
+    background-position: 0 -95px;
+    background-size: 100%;
   }
 }
 
@@ -13,6 +18,11 @@
   font-size: 48px;
   line-height: 52px;
   text-transform: uppercase;
+
+  @media (min-width: $bp-desktop) {
+    margin: 0;
+    margin-top: 44px;
+  }
 
   span {
     color: $main-red;
@@ -22,6 +32,12 @@
 .ask__text {
   font-size: 22px;
   line-height: 1;
+
+  @media (min-width: $bp-desktop) {
+    margin: 0;
+    margin-top: 11px;
+    margin-bottom: 28px;
+  }
 
   &--question {
     position: relative;
@@ -34,6 +50,13 @@
     text-align: left;
     color: #000000;
     text-transform: uppercase;
+
+    @media (min-width: $bp-desktop) {
+      margin-bottom: 58px;
+      padding-top: 48px;
+      padding-right: 15px;
+      padding-left: 87px;
+    }
 
     &::before {
       content: "1";
@@ -52,8 +75,17 @@
 
       @media (min-width: $bp-tablet) {
         top: 18px;
-        left: 30%;
         left: 18%;
+      }
+
+      @media (min-width: $bp-desktop) {
+        top: 31px;
+
+        width: 60px;
+        height: 60px;
+
+        font-size: 30px;
+        line-height: 60px;
       }
     }
 
@@ -67,6 +99,11 @@
 .ask__inner {
   background-color: #ffffff;
   border-radius: 10px;
+
+  @media (min-width: $bp-desktop) {
+    width: 641px;
+    margin: 0 auto;
+  }
 }
 
 .ask__btn {
@@ -85,4 +122,12 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
+
+  @media (min-width: $bp-desktop) {
+    margin-bottom: 52px;
+
+    &:last-child {
+      margin-left: 15px;
+    }
+  }
 }
