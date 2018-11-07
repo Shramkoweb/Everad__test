@@ -1,5 +1,12 @@
 .ask {
   text-align: center;
+
+  @media (min-width: $bp-tablet) {
+    background-image: url("../img/fire.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+  }
 }
 
 .ask__title {
@@ -42,6 +49,16 @@
 
       background: rgba(0, 0, 0, 0.1);
       border-radius: 50%;
+
+      @media (min-width: $bp-tablet) {
+        top: 18px;
+        left: 30%;
+        left: 18%;
+      }
+    }
+
+    @media (min-width: $bp-tablet) {
+      text-align: center;
     }
   }
 }
