@@ -1,0 +1,19 @@
+@font-face {
+  font-weight: 400;
+  font-family: "..";
+  font-style: normal;
+
+  font-display: swap;
+  src: local("..");
+  src: url("../fonts/..") format("woff2"), url("../fonts/..") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "..";
+  font-style: normal;
+
+  font-display: swap;
+  src: local("..");
+  src: url("../fonts/..") format("woff2"), url("../fonts/..") format("woff");
+}
