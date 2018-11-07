@@ -1,11 +1,25 @@
+.page-header {
+  @media (min-width: $bp-tablet) {
+    display: flex;
+  }
+}
+
 .page-header__list {
   @include list-reset;
+
   max-width: 260px;
   margin: 0 auto;
+
+  @media (min-width: $bp-tablet) {
+    display: flex;
+    max-width: 50%;
+    align-items: center;
+  }
 }
 
 .page-header__item {
   position: relative;
+
   padding: 10px 0;
   padding-left: 80px;
 
