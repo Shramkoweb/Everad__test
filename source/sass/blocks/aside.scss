@@ -1,0 +1,49 @@
+.aside__title {
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.aside__list {
+  @include list-reset;
+
+  margin-bottom: 25px;
+  padding-left: 35px;
+}
+
+.aside__item {
+  position: relative;
+
+  padding: 10px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -35px;
+
+    width: 24px;
+    height: 24px;
+
+    line-height: 24px;
+    text-align: center;
+
+    background-image: linear-gradient(-225deg, #fc481a 0%, #ca3a15 100%);
+    border: 1px solid #b67a52;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+  }
+}
