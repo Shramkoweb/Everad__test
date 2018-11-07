@@ -36,7 +36,6 @@
 }
 
 .about__text {
-  width: 555px;
   margin: 0;
   margin-top: 21px;
 
@@ -45,6 +44,8 @@
 
   span {
     @media (min-width: $bp-desktop) {
+      width: 555px;
+
       font-weight: 700;
       text-transform: uppercase;
     }
