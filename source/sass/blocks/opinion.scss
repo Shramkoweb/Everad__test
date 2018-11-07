@@ -5,6 +5,18 @@
 
   background-color: #ffffff;
   border-radius: 10px;
+
+  @media (min-width: $bp-desktop) {
+    position: relative;
+
+    padding: 25px;
+    padding-bottom: 37px;
+    padding-left: 40px;
+
+    background-image: url("../../img/doctor.jpg");
+    background-repeat: no-repeat;
+    background-position: 296px 0;
+  }
 }
 
 .opinion__title {
@@ -12,6 +24,13 @@
 
   span {
     color: $main-red;
+  }
+
+  @media (min-width: $bp-desktop) {
+    margin: 0;
+    margin-bottom: 28px;
+
+    font-size: 40px;
   }
 }
 
@@ -29,5 +48,26 @@
     height: 64px;
 
     background-image: url("../img/sign.png");
+
+    @media (min-width: $bp-desktop) {
+      position: absolute;
+      right: 433px;
+      bottom: 17px;
+    }
+  }
+
+  @media (min-width: $bp-desktop) {
+    width: 567px;
+    margin-top: 28px;
+  }
+}
+
+.opinion__text {
+  @media (min-width: $bp-desktop) {
+    width: 567px;
+    margin: 0;
+    margin-bottom: 10px;
+
+    line-height: 24px;
   }
 }
