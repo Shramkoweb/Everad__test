@@ -15,6 +15,11 @@
     max-width: 50%;
     align-items: center;
   }
+
+  @media (min-width: $bp-desktop) {
+    max-width: 500px;
+    margin: 0;
+  }
 }
 
 .page-header__item {
@@ -43,4 +48,18 @@
       background-image: url("../img/icon-like.png");
     }
   }
+
+  span {
+    @media (min-width: $bp-desktop) {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+  }
+
+  @media (min-width: $bp-desktop) {
+    max-width: 500px;
+    margin: 0;
+  }
 }
+

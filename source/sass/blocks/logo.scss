@@ -6,4 +6,8 @@
 
 .logo-wrapper {
   padding: 25px 0;
+
+  @media (min-width: $bp-desktop) {
+    margin-right: 58px;
+  }
 }
