@@ -1,0 +1,131 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(254, 213, 91, 0.25);
+}
+
+.form__stock {
+  display: flex;
+  min-height: 116px;
+  margin-bottom: 2px;
+
+  background-image: url("../img/form-top.png");
+  background-repeat: no-repeat;
+  background-position-y: -62px;
+  background-size: 100%;
+}
+
+
+.form__text {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0;
+  padding: 15px 10px;
+
+  text-align: center;
+
+  &--before {
+    text-decoration: line-through;
+
+    opacity: 0.3;
+  }
+
+  &--security {
+    width: 100%;
+    padding-left: 50px;
+
+    font-size: 15px;
+    color: #000000;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 30px;
+
+      width: 13px;
+      height: 17px;
+
+      background-image: url("../img/icon-lock.png");
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.form__group {
+  margin: 0;
+  padding: 0 15px;
+
+  border: none;
+}
+
+.form__price {
+  font-size: 40px;
+}
+
+.form__input {
+  width: 100%;
+  height: 55px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+
+  background-color: #f6f6f6;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+}
+
+.form__btn {
+  position: relative;
+
+  max-width: 255px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+
+  background-image: linear-gradient(to top, #d73f17 0%, #fa4a1b 100%);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2.5px 4.3px 25px rgba(250, 74, 27, 0.35);
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 40px;
+    height: 100%;
+
+    background-color: #b13412;
+    border-radius: 5px 0 0 5px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 13px;
+
+    width: 11px;
+    height: 12px;
+
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(-45deg);
+  }
+}
