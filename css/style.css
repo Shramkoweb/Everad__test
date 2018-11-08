@@ -431,6 +431,10 @@ img {
 .aside__item {
   position: relative;
   padding: 10px 0; }
+  @media (max-width: 767px) {
+    .aside__item:nth-child(2) .aside__check,
+    .aside__item:nth-child(4) .aside__check {
+      top: 20px; } }
   .aside__item::before {
     content: "";
     position: absolute;
