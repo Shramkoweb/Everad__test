@@ -37,6 +37,13 @@
 
   padding: 10px 0;
 
+  @media (max-width: $bp-tablet - 1px) {
+    &:nth-child(2) .aside__check,
+    &:nth-child(4) .aside__check {
+      top: 20px;
+    }
+  }
+
   &::before {
     content: "";
     position: absolute;
